@@ -24,15 +24,19 @@ namespace att2
 
 
 
-            Pilha.Push(0);
-            Pilha.Push(1);
+           int a = 0, b = 1;
 
-            
-
-         for(int i = 0; i < N;i++)
+            Pilha.Push(a);
+            Pilha.Push(b); 
+            for (int i = 2; i < N; i++)
             {
-               // Fazer a sequencia de fibonachi e armazenar na pilha
+                int c = a + b;
+                Pilha.Push(c);
+                a = b;
+                b = c;
             }
+
+            Console.WriteLine("Sequência de Fibonacci na ordem inversa:");
 
          foreach(int n in Pilha)
             {
