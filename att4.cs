@@ -13,7 +13,7 @@ namespace att4
 
             string filePath = "Aula Prática - Collections.txt"; 
             string text = File.ReadAllText(filePath);
-            string[] palavras = text.Split(new char[] { ' ', ',', '.', ';', ':', '?', '!', '\n', '\r', '\"', '-', '(', ')' });
+            string[] palavras = text.Split(' ', ',', '.', ';', ':', '?', '!', '\n', '\r', '\"', '-', '(', ')');
 
             foreach (string palavra in palavras)
             {
